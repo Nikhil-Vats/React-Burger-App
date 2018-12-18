@@ -24,7 +24,9 @@
     .NavigationItem {
         margin: 0;
         display: flex;
+        flex-direction: row;
         height: 100%;
+        width: 130px;
         align-items: center;
     }
     

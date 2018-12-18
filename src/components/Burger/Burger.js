@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router-dom';
 import classes from './Burger.css';
 import BurgerIngredient from './BurgerIngredient/BurgerIngredient';
 
@@ -11,7 +12,7 @@ const burger = (props) => {
     }).reduce((arr, el) => {
         return arr.concat(el)
     }, []);
-    if(tranformedIngredients.length == 0) {
+    if(tranformedIngredients.length === 0) {
         tranformedIngredients = <p>Please start adding ingredients!</p>;
     }
     // Object.keys transforms object keys into array, it does not
@@ -26,4 +27,4 @@ const burger = (props) => {
     );
 };
 
-export default burger;
+export default withRouter(burger);
