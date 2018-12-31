@@ -1,0 +1,190 @@
+*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+*::-webkit-scrollbar {
+  width: 8px;
+  height: 7px;
+  background-color: #F5F5F5;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #888;
+}
+/*Left Table*/
+.left-one {
+  position: fixed;
+  height: 70vh;
+  width: 45vw;
+  top: 10vh;
+  left: 5vw;
+}
+.name, .group-id, .coll-name {
+  text-align: center;
+}
+.name {
+  flex-basis: 30%;
+}
+.group-id {
+  flex-basis: 20%;
+}
+.coll-name {
+  flex-basis: 30%;
+}
+.left-one {
+  border: 0;
+  border-collapse: collapse;
+}
+.left-one tr {
+  display: flex;
+}
+.left-one>tbody>tr>td {
+  padding: 1vmin;
+}
+.left-one td {
+  flex: 1;
+}
+.left-one thead tr {
+  overflow-y: auto;
+}
+.left-one thead th {
+  flex: 1;
+  display: block;
+  height: 8vh;
+}
+.left-one tbody {
+  display: block;
+  overflow-y: auto;
+  height: 62vh;
+}
+/*Right Table*/
+.right-one {
+  position: fixed;
+  height: 70vh;
+  width: 45vw;
+  top: 10vh;
+  left: 50.5vw;
+}
+.right-one {
+  border: 0;
+  border-collapse: collapse;
+}
+.right-one tr {
+  display: flex;
+}
+.right-one>tbody>tr>td {
+  padding: 1vmin;
+}
+.right-one td {
+  flex: 1;
+}
+.right-one thead tr {
+  overflow-y: auto;
+}
+.right-one thead th {
+  flex: 1;
+  display: block;
+  height: 8vh;
+}
+.right-one tbody {
+  display: block;
+  overflow-y: auto;
+  height: 62vh;
+}
+.sort-icon {
+  opacity: 0.5;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  position: relative;
+  top: 5px;
+}
+.sort-icon:hover {
+  opacity: 1;
+}
+.change_cursor {
+  cursor: pointer;
+}
+.add_participant-btn {
+  position: fixed;
+  top: 81vh;
+  left: 56vw;
+  width: 15vw;
+  padding: 0 1vmin;
+  justify-content: space-between;
+}
+.confirm_group-btn {
+  position: fixed;
+  top: 81vh;
+  left: 76vw;
+  width: 15vw;
+  padding: 0 1vmin;
+  justify-content: space-around;
+}
+.add_all-btn {
+  position: fixed;
+  top: 10vh;
+  left: 0.5vw;
+}
+#confirm_dialog {
+  top: 30vh !important;
+}
+#add_participant_modal {
+  padding-top: 30px;
+}
+
+#wrap_searches {
+  position: fixed;
+  width: 45vw;
+  left: 5vw;
+  top: 0vh;
+}
+
+#wrap_searches2 {
+  position: fixed;
+  width: 90vw;
+  left: 5vw;
+  top: 0vh;
+}
+
+.modal {
+  width: 85%;
+}
+.row {
+  display: block;
+  width: 100% !important;
+}
+.no_of_part{position: fixed; top: 10vh; right: 0.1vh;}
+.firewallz_part{position: fixed; top: 2vh; left: 52vw;}
+.controls_part{position: fixed; top: 2vh; left: 69vw;}
+.recnacc_part{position: fixed; top: 2vh; left: 86vw;}
+.ham1{position: absolute;right: 0;bottom: 11vh;}
+.stats{position: fixed;z-index: 1;width: 100vw;top: 0;left: 0;transition: 0.5s;}
+#close{z-index: 5;display: none;cursor: pointer;}
+#stat_data{z-index: 5;display: none;height:80vh;overflow-y: auto;}
+#csv{width:20vw;display: none;z-index: 5;position: fixed; bottom: 0;left: 0;background-color: white;color:teal;}
+#excel{width:20vw;display: none;z-index: 5;position: fixed; bottom: 0;left: 40vw;background-color: white;color:teal;}
+#pdf{width:20vw;display: none;z-index: 5;position: fixed; bottom: 0;left: 80vw;background-color: white;color:teal;}
+.cont{position: absolute;bottom: calc(11vh + 5px);left: 5px;}
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 0;
+  max-height: 11vh;
+  height: 11vh;
+  overflow: hidden;
+  color: #f5dd42;
+}
+.page-footer>div>div>div>span {
+  font-size: 3vh;
+  vertical-align: middle;
+}
+html {
+  background-color: rgba(104, 168, 224, 0.3);
+  width: 100vw;
+}
+.ham1{display: none}
