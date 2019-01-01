@@ -10,12 +10,9 @@ import Spinner from '../../components/UI/Spinner/Spinner';
 import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../store/actions/index';
 
-class BurgerBuilder extends Component {
+export class BurgerBuilder extends Component {
     state = {
-        // purchasable: false,
         purchasing: false
-        // loading: false,
-        // error: false
     }
     componentDidMount() {
         // axios.get('https://react-my-burger-f7e47.firebaseio.com/ingredients.json')
